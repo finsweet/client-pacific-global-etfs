@@ -1,30 +1,40 @@
-# Finsweet Developer Starter
+# Pacific Global Etfs
 
-A starter template for both Client & Power projects. This project contains:
+This repository contains all the custom code for the new Pacific Global Etfs website in Webflow.
+
+This project is built with:
 
 - Preconfigured development tools:
 
-  - [Typescript](https://www.typescriptlang.org/): A superset of Javascript that adds an additional layer of Typings, bringing more security and efficiency to the written code.
-  - [Prettier](https://prettier.io/): Code formating that assures consistency across all Finsweet's projects.
-  - [ESLint](https://eslint.org/): Code linting that enforces industries' best practises. It uses [our own custom configuration](https://github.com/finsweet/eslint-config) to maintain consistency across all Finsweet's projects.
-  - [ESBuild](https://esbuild.github.io/): Javascript bundler that compiles, bundles and minifies the original Typescript files.
+  - [Typescript](https://www.typescriptlang.org/)
+  - [Prettier](https://prettier.io/)
+  - [ESLint](https://eslint.org/)
+  - [ESBuild](https://esbuild.github.io/)
+  - [PapaParse](https://www.npmjs.com/package/@types/papaparse)
+  - [Finsweet TsUtils](https://www.npmjs.com/package/@finsweet/ts-utils?activeTab=dependents)
 
-- Learning resources for new team members:
-
-  - [Learning Typescript](#typescript): Everything you need to start confidently coding with Typescript.
-  - [Coding best practises](#best-practises): Learn how to write clean and semantic code that is easily understandable by your teammates.
-  - [Setting up your development environment](#dev-environment): Learn how to set up VSCode and to use the development tools included in this repository
-  - [Development workflows](#dev-workflows): See examples of workflows from your local environment to Webflow.
-  - [Git](#git): Learn how to collaborate with your teammates' code!
 
 ## How to start
 
-The quickest way to start developing a new project is by [creating a new repository from this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template).
-
-After that, open the new repository in your terminal and install the NPM packages by running:
+Open the repository in your terminal and install the NPM packages by running:
 
 ```bash
 npm install
 ```
+Install finsweet ts-utils
+```bash
+npm i @finsweet/ts-utils
+```
+Instal Papaparse
+```bash
+npm install --save @types/papaparse
+```
+```bash
+npm install papaparse
+```
+After that, you can generate the production files by running:
+```bash
+npm run build
+```
+The output will be generated in the dist folder.
 
-If this is your first time using this template, check out the [Resources](https://github.com/finsweet/developer-starter/tree/master/resources) section on this `README` and the boilerplate in the [`src/index.ts`](https://github.com/finsweet/developer-starter/blob/master/src/index.ts) file. Otherwise, feel free to remove them!
