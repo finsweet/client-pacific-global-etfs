@@ -1,6 +1,6 @@
 # Pacific Global Etfs
 
-This repository contains all the custom code for the new Pacific Global Etfs website in Webflow.
+This repository contains some custom code for the new Pacific Global Etfs website in Webflow, for the purpose of populating FLRT/FJNK data on it Holdings Table.
 
 This project is built with:
 
@@ -11,7 +11,7 @@ This project is built with:
   - [ESLint](https://eslint.org/)
   - [ESBuild](https://esbuild.github.io/)
   - [PapaParse](https://www.npmjs.com/package/@types/papaparse)
-  - [Finsweet TsUtils](https://www.npmjs.com/package/@finsweet/ts-utils?activeTab=dependents)
+  - [Finsweet Ts-Utils](https://www.npmjs.com/package/@finsweet/ts-utils?activeTab=dependents)
 
 
 ## How to start
