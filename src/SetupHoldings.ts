@@ -1,4 +1,3 @@
-import { parse } from 'papaparse';
 import { cloneNode } from '@finsweet/ts-utils';
 
 interface SetupHoldingInterface {
@@ -42,7 +41,7 @@ export default function setupHolding(url: string): void {
 
   // Calling CSV Parser
   //const holdingTickerType = 'FJNK';
-  parse<string>(url, {
+  window.Papa.parse<string>(url, {
     download: true,
     complete: ({ data }) => {
       // List to capture holdings record according to the holdings Ticker Type
